@@ -1,5 +1,6 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
 
 # creez managerul
 manager = ProductManager
@@ -19,3 +20,17 @@ manager.display_all_products()
 
 # afisam valoare totala
 manager.total_value()
+
+# creez cosul
+cart = Cart()
+
+# adaug 3 produse din lista managerului
+cart.add_to_cart(manager.products[0])
+cart.add_to_cart(manager.products[1])
+cart.add_to_cart(manager.products[2])
+
+# afisez cosul
+cart.display_cart()
+
+# total de plata
+cart.total_price()
