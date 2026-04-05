@@ -22,10 +22,10 @@ class ProductManager:
         print(f"Valoarea totala a produselor: {total} RON")
 
 
-def remove_product(self, name):
-    for product in self.products:
-        if product.name == name:
-            self.products.remove(product)
-            print(f"Produsul {name} a fost eliminat.")
-            return
+    def remove_product(self, name):
+        for product in self.products:
+            if product.name == name:
+                self.products.remove(product)
+                print(f"Produsul {name} a fost eliminat.")
+                return
         print(f"Produsul {name} nu a fost gasit.")
