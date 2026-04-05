@@ -22,12 +22,12 @@ manager.display_all_products()
 manager.total_value()
 
 # creez cosul
-cart = Cart()
+cart = Cart(manager)
 
 # adaug 3 produse din lista managerului
-cart.add_to_cart(manager.products[0])
-cart.add_to_cart(manager.products[1])
-cart.add_to_cart(manager.products[2])
+cart.add_to_cart("Telefon Samsung")
+cart.add_to_cart("Laptop Gaming")
+cart.add_to_cart("Mouse")
 
 # afisez cosul
 cart.display_cart()

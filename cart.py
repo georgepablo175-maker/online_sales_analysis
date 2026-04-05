@@ -1,10 +1,15 @@
 class Cart:
-    def __init__(self):
+    def __init__(self, product_manager):
         self.cart_items = []
+        self.product_manager = product_manager
 
-    def add_to_cart(self, product):
-        self.cart_items.append(product)
-        print(f"{product.name} a fost adaugat in cos")
+    def add_to_cart(self, product_name):
+        for product in self.product_manager.products:
+            if product.name == product_name:
+                self.cart_items.append(product)
+                print(f"{product.name} a fost adaugat in cos")
+                return
+            print(f"Produsul {product_name} nu exista")
 
     def total_price(self):
         total = 0
