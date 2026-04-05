@@ -1,7 +1,7 @@
 # Online Sales Analysis
 
 ## Descriere proiect
-Acest proiect Python simulează un sistem simplu de gestionare a produselor și a unui coș de cumpărături. Proiectul utilizează Git și GitHub pentru versionarea codului și gestionarea modificărilor.
+Acest proiect Python simulează un sistem simplu de gestionare a produselor și a unui coș de cumpărături.
 
 ## Funcționalități
 
